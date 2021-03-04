@@ -3,9 +3,51 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicBit.Api", "MusicBit.Api\MusicBit.Api.csproj", "{1B2E8431-226A-4F1D-8EC4-DB487B5F694B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{69F53BD6-DFB7-4FD8-A86E-70F0DB64982D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicBit.IntegrationTests", "MusicBit.IntegrationTests\MusicBit.IntegrationTests.csproj", "{AE0980A0-2C73-4402-8FB4-E0D2A11AA3F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicBit.UnitTests", "MusicBit.UnitTests\MusicBit.UnitTests.csproj", "{DE610694-581F-4BB7-A5C1-2E0CC6744813}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicBit.Core", "MusicBit.Core\MusicBit.Core.csproj", "{1348FBCD-2ED4-4A6F-A2F9-4854784D0AC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicBit.Infrastructure", "MusicBit.Infrastructure\MusicBit.Infrastructure.csproj", "{EAA0DC53-F01A-4022-BBBE-368AFC999E0D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B2E8431-226A-4F1D-8EC4-DB487B5F694B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2E8431-226A-4F1D-8EC4-DB487B5F694B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2E8431-226A-4F1D-8EC4-DB487B5F694B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2E8431-226A-4F1D-8EC4-DB487B5F694B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE0980A0-2C73-4402-8FB4-E0D2A11AA3F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0980A0-2C73-4402-8FB4-E0D2A11AA3F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0980A0-2C73-4402-8FB4-E0D2A11AA3F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0980A0-2C73-4402-8FB4-E0D2A11AA3F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE610694-581F-4BB7-A5C1-2E0CC6744813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE610694-581F-4BB7-A5C1-2E0CC6744813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE610694-581F-4BB7-A5C1-2E0CC6744813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE610694-581F-4BB7-A5C1-2E0CC6744813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1348FBCD-2ED4-4A6F-A2F9-4854784D0AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1348FBCD-2ED4-4A6F-A2F9-4854784D0AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1348FBCD-2ED4-4A6F-A2F9-4854784D0AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1348FBCD-2ED4-4A6F-A2F9-4854784D0AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA0DC53-F01A-4022-BBBE-368AFC999E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA0DC53-F01A-4022-BBBE-368AFC999E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA0DC53-F01A-4022-BBBE-368AFC999E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA0DC53-F01A-4022-BBBE-368AFC999E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE0980A0-2C73-4402-8FB4-E0D2A11AA3F0} = {69F53BD6-DFB7-4FD8-A86E-70F0DB64982D}
+		{DE610694-581F-4BB7-A5C1-2E0CC6744813} = {69F53BD6-DFB7-4FD8-A86E-70F0DB64982D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {359BB342-9307-4470-9996-5C7F6C673A19}
