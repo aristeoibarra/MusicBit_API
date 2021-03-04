@@ -2,11 +2,15 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using MusicBit.Core.Interfaces;
+using MusicBit.Infrastructure.Data;
+using MusicBit.Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +36,12 @@ namespace MusicBit.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MusicBit.Api", Version = "v1" });
             });
+
+
+            services.AddDbContext<MusicBitContext>(opcions =>
+                opcions.UseSqlServer(Configuration.GetConnectionString("MusicBit")));
+
+            services.AddTransient<IPostRepository, PostRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
