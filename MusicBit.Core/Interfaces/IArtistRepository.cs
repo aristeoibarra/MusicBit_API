@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace MusicBit.Core.Interfaces
 {
-    public interface IPostRepository
+    public interface IArtistRepository
     {
-        Task<IEnumerable<Artistum>> GetPosts();
+        Task<IEnumerable<Artist>> GetArtists();
+        Task<Artist> GetArtist(int id);
     }
 }

@@ -41,7 +41,7 @@ namespace MusicBit.Api
             services.AddDbContext<MusicBitContext>(opcions =>
                 opcions.UseSqlServer(Configuration.GetConnectionString("MusicBit")));
 
-            services.AddTransient<IPostRepository, PostRepository>();
+            services.AddTransient<IArtistRepository, ArtistRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
