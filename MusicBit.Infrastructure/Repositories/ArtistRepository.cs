@@ -29,5 +29,11 @@ namespace MusicBit.Infrastructure.Repositories
             var artist = await _context.Artists.FirstOrDefaultAsync(x => x.ArtistId == id);
             return artist;
         }
+
+        public async Task InsertArtist(Artist artist)
+        {
+            _context.Artists.Add(artist);
+            await _context.SaveChangesAsync();
+        }
     }
 }

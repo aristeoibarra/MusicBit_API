@@ -10,5 +10,6 @@ namespace MusicBit.Core.Interfaces
     {
         Task<IEnumerable<Artist>> GetArtists();
         Task<Artist> GetArtist(int id);
+        Task InsertArtist(Artist artist);
     }
 }

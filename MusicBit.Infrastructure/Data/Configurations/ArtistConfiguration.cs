@@ -12,7 +12,8 @@ namespace MusicBit.Infrastructure.Data.Configurations
 
             builder.HasKey(e => e.ArtistId);
 
-            builder.Property(e => e.ArtistId).HasColumnName("IdArtista");
+            builder.Property(e => e.ArtistId)
+                .HasColumnName("IdArtista");
 
             builder.Property(e => e.LastName)
                    .IsRequired()
